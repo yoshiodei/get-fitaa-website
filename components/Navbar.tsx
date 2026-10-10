@@ -101,7 +101,7 @@ export default function Navbar() {
             href="/book"
             className="rounded-md bg-[#0E7C3A] px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#0B6430] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E7C3A] focus-visible:ring-offset-2"
           >
-            Book a Clean
+            <span className="text-white">Book a Clean</span>
           </Link>
         </div>
 
@@ -160,7 +160,7 @@ export default function Navbar() {
                 tabIndex={open ? 0 : -1}
                 className="flex-1 rounded-md bg-[#0E7C3A] px-5 py-3 text-center text-sm font-semibold text-white hover:bg-[#0B6430]"
               >
-                Book a Clean
+                <span className="text-white">Book a Clean</span>
               </Link>
             </li>
           </ul>
