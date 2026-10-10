@@ -4,7 +4,7 @@ export default function ServiceAreas() {
   return (
     <section
       aria-labelledby="service-areas-title"
-      className="bg-white px-4 py-8 sm:px-6 sm:py-10 lg:px-10 lg:py-12"
+      className="bg-white px-4 py-5 sm:px-6 sm:py-5 lg:px-10 lg:py-8"
     >
       <h2
         id="service-areas-title"

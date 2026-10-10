@@ -150,7 +150,7 @@ export default function Hero() {
           </ul>
 
           {/* CTAs */}
-          <div className="mt-6 flex flex-wrap items-center gap-4 lg:mt-8">
+          <div className="mt-6 flex flex-wrap items-center gap-4 lg:mt-8 pb-6">
             <Link
               href="/book"
               className="inline-flex items-center gap-2 rounded-full bg-[#0E7C3A] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0B6430] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E7C3A] focus-visible:ring-offset-2"
