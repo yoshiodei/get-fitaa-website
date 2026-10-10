@@ -50,17 +50,17 @@ export default function Hero() {
   const common = { alt: "", fill: true, sizes: "100vw", priority: true };
   const {
     props: { srcSet: desktopSrcSet },
-  } = getImageProps({ ...common, src: "/images/hero.jpg" });
+  } = getImageProps({...common, src:"/images/hero.jpg"});
   const {
     props: { srcSet: mobileSrcSet, ...imgProps },
-  } = getImageProps({ ...common, src: "/images/hero.png" });
+  } = getImageProps({ ...common, src:"/images/hero-mobile.png" });
 
   return (
     <section className="relative isolate overflow-hidden" aria-labelledby="hero-heading">
       {/* Background photo */}
       <picture>
-        <source media="(min-width: 1024px)" srcSet={desktopSrcSet} />
-        <source media="(max-width: 1023px)" srcSet={mobileSrcSet} />
+        <source media="(min-width: 1024px and max-width: 50000px)" srcSet={desktopSrcSet} />
+        <source media="(max-width: 1023px and min-width: 0px)" srcSet={mobileSrcSet} />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           {...imgProps}
@@ -75,9 +75,9 @@ export default function Hero() {
         className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent from-35% via-white/75 via-70% to-white lg:bg-gradient-to-r lg:from-white lg:from-30% lg:via-white/60 lg:via-50% lg:to-transparent lg:to-75%"
       />
 
-      <div className="flex min-h-[680px] flex-col justify-end px-4 pb-8 pt-10 sm:min-h-[780px] sm:px-6 sm:pb-12 lg:grid lg:min-h-[560px] lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-10 lg:px-10 lg:py-14 xl:grid-cols-[minmax(0,1fr)_400px]">
+      <div className="flex min-h-[680px] flex-col justify-end px-0 pb-8 pt-10 sm:min-h-[780px] sm:px-6 sm:pb-12 lg:grid lg:min-h-[560px] lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-10 lg:px-10 lg:py-14 xl:grid-cols-[minmax(0,1fr)_400px]">
         {/* Copy + trust points + CTAs */}
-        <div className="max-w-xl">
+        <div className="max-w-xl p-4 sm:p-0 bg-gradient-to-t from-white/30 to-transparent">
           <p className="text-xs font-bold uppercase tracking-wide text-[#0E7C3A] lg:text-[11px] lg:tracking-wider">
             On-demand cleaning service
           </p>
@@ -105,14 +105,14 @@ export default function Hero() {
             {TRUST_POINTS.map((point, i) => (
               <li
                 key={point.lines[0]}
-                className={`flex flex-col items-center gap-3 rounded-xl bg-white text-center shadow-md shadow-black/10 p-1 sm:p-2 lg:flex-1 lg:flex-row lg:gap-2.5 lg:rounded-none lg:bg-transparent lg:p-0 lg:text-left lg:shadow-none ${
+                className={`flex flex-col items-center gap-1 sm:gap-3 rounded-xl bg-white text-center shadow-md shadow-black/10 p-1 sm:p-2 lg:flex-1 lg:flex-row lg:gap-2.5 lg:rounded-none lg:bg-transparent lg:p-0 lg:text-left lg:shadow-none ${
                   i === 0 ? "lg:pr-4" : "lg:border-l lg:border-neutral-300 lg:pl-4"
                 } ${i === 1 ? "lg:pr-4" : ""}`}
               >
                 <span className="flex h-8 w-8 p-1 shrink-0 items-center justify-center rounded-lg bg-[#0E7C3A] text-white sm:h-7 sm:w-7 lg:h-auto lg:w-auto lg:bg-transparent lg:text-[#0E7C3A]">
                   {point.icon}
                 </span>
-                <span className="text-[11px] font-semibold leading-snug text-neutral-800 sm:text-[11px] lg:text-[11px] lg:font-medium">
+                <span className="text-[9px] font-semibold leading-snug text-neutral-800 sm:text-[11px] lg:text-[11px] lg:font-medium">
                   {point.lines[0]}
                   <br className="hidden lg:block" /> {point.lines[1]}
                 </span>
