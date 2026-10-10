@@ -106,8 +106,8 @@ export default function Hero() {
       />
 
       {/* ---------- Content ---------- */}
-      <div className="relative z-10 flex min-h-[680px] flex-col justify-end px-4 pb-8 pt-10 sm:min-h-[780px] sm:px-6 sm:pb-12 lg:grid lg:min-h-[560px] lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-10 lg:px-10 lg:py-14 xl:grid-cols-[minmax(0,1fr)_400px]">
-        <div className="max-w-xl pt-[250px] sm:pt-0 bg-gradient-to-t from-white/90 to-transparent sm:bg-none">
+      <div className="relative z-10 flex min-h-[680px] flex-col justify-end pb-8 pt-10 sm:min-h-[780px] sm:px-6 sm:pb-12 lg:grid lg:min-h-[560px] lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-10 lg:px-10 lg:py-14 xl:grid-cols-[minmax(0,1fr)_400px]">
+        <div className="max-w-xl px-4 sm:px-0 pt-[250px] sm:pt-0 bg-gradient-to-t from-white/90 to-transparent sm:bg-none">
           <p className="text-xs font-bold uppercase tracking-wide text-[#0E7C3A] lg:text-[11px] lg:tracking-wider">
             On-demand cleaning service
           </p>
@@ -134,7 +134,7 @@ export default function Hero() {
             {TRUST_POINTS.map((point, i) => (
               <li
                 key={point.lines[0]}
-                className={`flex flex-col items-center gap-3 rounded-xl bg-white pr-3 pl-3 p-2 text-center shadow-md shadow-black/10 sm:p-4 lg:flex-1 lg:flex-row lg:gap-2.5 lg:rounded-none lg:bg-transparent lg:p-0 lg:text-left lg:shadow-none ${
+                className={`flex flex-col items-center gap-3 rounded-xl bg-white pr-3 pl-3 p-2 text-center shadow-md shadow-black/20 sm:p-4 lg:flex-1 lg:flex-row lg:gap-2.5 lg:rounded-none lg:bg-transparent lg:p-0 lg:text-left lg:shadow-none ${
                   i === 0 ? "lg:pr-4" : "lg:border-l lg:border-neutral-300 lg:pl-4"
                 } ${i === 1 ? "lg:pr-4" : ""}`}
               >
