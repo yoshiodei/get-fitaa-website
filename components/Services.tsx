@@ -33,7 +33,7 @@ const SERVICES: Service[] = [
     description:
       "Regular upkeep for your home: dusting, vacuuming...",
     price: 250,
-    image: "/images/services/standard-clean.jpg",
+    image: "/images/services/standard-clean.png",
     icon: (
       <svg {...icon}>
         <path d="M4 11 12 4l8 7v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9Z" />
@@ -46,7 +46,7 @@ const SERVICES: Service[] = [
     description:
       "A top-to-bottom scrub that reaches hidden corners...",
     price: 450,
-    image: "/images/services/deep-clean.jpg",
+    image: "/images/services/deep-clean.png",
     icon: (
       <svg {...icon}>
         <path d="M9 3c.6 3.6 2.4 5.4 6 6-3.6.6-5.4 2.4-6 6-.6-3.6-2.4-5.4-6-6 3.6-.6 5.4-2.4 6-6Z" />
@@ -59,7 +59,7 @@ const SERVICES: Service[] = [
     description:
       "Leave a spotless place behind or start fresh...",
     price: 600,
-    image: "/images/services/move-in-out.jpg",
+    image: "/images/services/move-in-move-out.png",
     icon: (
       <svg {...icon}>
         <path d="M21 8 12 3 3 8v8l9 5 4-2.2" />
@@ -74,7 +74,7 @@ const SERVICES: Service[] = [
     description:
       "Keep your workspace tidy and professional...",
     price: 350,
-    image: "/images/services/office-clean.jpg",
+    image: "/images/services/office-clean.png",
     icon: (
       <svg {...icon}>
         <path d="M3 21h18M5 21V9h6v12M11 21V4h8v17" />
@@ -124,16 +124,18 @@ export default function Services() {
                 <h3 className="text-lg font-bold text-neutral-800">{s.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-700">{s.description}</p>
 
-                <p className="mt-3 text-sm text-neutral-600">
+                <div className="mt-auto pt-5 flex flex-col gap-2 items-start justify-end">
+
+                <p className=" text-sm text-neutral-600">
                   from{" "}
                   <span className="text-base font-bold text-neutral-900">
                     {formatPrice(s.price)}
                   </span>
                 </p>
-
+                
                 <Link
                   href={`/book?service=${encodeURIComponent(s.title)}`}
-                  className="group mt-auto inline-flex items-center gap-2 pt-5 text-base font-bold text-[#0E7C3A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E7C3A] focus-visible:ring-offset-2"
+                  className="group inline-flex items-center gap-2 text-base font-bold text-[#0E7C3A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E7C3A] focus-visible:ring-offset-2"
                 >
                   Book Now
                   <svg
@@ -151,6 +153,7 @@ export default function Services() {
                     <path d="M5 12h14M13 6l6 6-6 6" />
                   </svg>
                 </Link>
+                </div>
               </div>
             </article>
           </li>
