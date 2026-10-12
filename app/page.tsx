@@ -10,6 +10,9 @@ import ServiceAreas from '@/components/ServiceAreas'
 import Services from '@/components/Services'
 import Mission from '@/components/Mission'
 import Testimonials from '@/components/Testimonials'
+import HowItWorks from '@/components/HowItWorks'
+import Pricing from '@/components/Pricing'
+import Footer from '@/components/Footer'
 
 // const sourceImage = 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=85'
 
@@ -34,6 +37,9 @@ export default function Page() {
         <Services />
         <Mission />
         <Testimonials />
+        <HowItWorks />
+        <Pricing />
+        <Footer />
       </PageShell>
       {/* <header className="topbar bg-black text-red-100">
         <a href="#top" className="brand" aria-label="getFitaa home"><span className="brand-mark"><Leaf size={20} fill="currentColor" /></span><span>get<span>Fitaa</span></span></a>

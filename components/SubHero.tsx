@@ -162,7 +162,7 @@ export default function Hero() {
             </Link>
 
             <Link
-              href="/#how-it-works"
+              href="/how-it-works"
               className="group inline-flex items-center gap-2.5 rounded-full text-sm font-semibold text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E7C3A] focus-visible:ring-offset-2"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-neutral-900 transition-colors group-hover:border-[#0E7C3A] group-hover:text-[#0E7C3A]">

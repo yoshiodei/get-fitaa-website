@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -16,9 +17,9 @@ const NAV_LINKS: NavLink[] = [
 
 function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2" aria-label="CleanGo home">
+    <Link href="/" className="flex items-center gap-2" aria-label="getFitaa home">
       {/* Swap this SVG for <Image src="/logo.svg" ... /> once you have the real asset */}
-      <svg
+      {/* <svg
         width="36"
         height="36"
         viewBox="0 0 36 36"
@@ -37,10 +38,16 @@ function Logo() {
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
+      </svg> */}
+      <Image 
+        src="/get-fitaa-logo-icon.png" 
+        alt="getFitaa"
+        width={36}
+        height={36}
+      />
       <span className="flex flex-col leading-none">
         <span className="text-xl font-extrabold tracking-tight text-[#0E7C3A]">
-          Clean<span className="text-[#0B3D22]">Go</span>
+          <span className="text-[#0B3D22]">get</span>Fitaa
         </span>
         <span className="mt-0.5 hidden text-[8px] font-medium text-neutral-500 sm:block">
           Clean Homes, Brighter Lives.

@@ -83,7 +83,7 @@ export default function Mission() {
 
           <Link
             href="/about"
-            className="group mt-6 inline-flex w-full max-w-[14rem] items-center justify-between rounded-full bg-[#43C45A] px-5 py-2 text-lg font-bold text-white transition-colors hover:bg-[#3AB24F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1B6B2A] lg:mt-auto lg:self-start"
+            className="group mt-6 inline-flex w-full max-w-[14rem] items-center justify-between rounded-full bg-[#43C45A] px-5 py-2 text-lg font-bold text-white transition-colors hover:bg-[#3AB24F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1B6B2A] lg:mt-6 lg:self-start"
           >
             About Us
             <svg
@@ -107,7 +107,7 @@ export default function Mission() {
         <div className="relative hidden min-h-[320px] overflow-hidden rounded-2xl bg-neutral-100 lg:block">
           <Image
             src={MISSION_IMAGES.desktop}
-            alt="CleanGo cleaners tidying a living room"
+            alt="getFitaa cleaners tidying a living room"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover"

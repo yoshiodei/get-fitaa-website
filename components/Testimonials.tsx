@@ -6,7 +6,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 const REVIEWS = [
   {
     name: "Ama Serwaa",
-    text: "CleanGo transformed my apartment in one afternoon. The cleaners arrived on time, were polite, and left every corner spotless. I booked a second visit before they even left.",
+    text: "getFitaa transformed my apartment in one afternoon. The cleaners arrived on time, were polite, and left every corner spotless. I booked a second visit before they even left.",
   },
   {
     name: "Kwame Mensah",
