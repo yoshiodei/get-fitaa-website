@@ -55,7 +55,7 @@
    import PageShell from "@/components/PageShell";
    import "./globals.css";
  
-   export const metadata: Metadata = { title: "CleanGo" };
+   export const metadata: Metadata = { title: "getFitaa" };
  
    export default function RootLayout({ children }: { children: React.ReactNode }) {
      return (
