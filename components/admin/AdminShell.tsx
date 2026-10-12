@@ -88,7 +88,6 @@
 //           <aside className="relative flex h-full w-72 max-w-[85%] flex-col bg-[#0B3D22]">{sidebarBody}</aside>
 //         </div>
 //       )}
-
 //       <div className="flex min-w-0 flex-1 flex-col">
 //         <header className="flex h-16 shrink-0 items-center justify-between gap-4 border-b border-neutral-200 bg-white px-4 sm:px-6">
 //           <div className="flex items-center gap-3">
