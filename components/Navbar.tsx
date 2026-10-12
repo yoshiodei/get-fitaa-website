@@ -18,27 +18,6 @@ const NAV_LINKS: NavLink[] = [
 function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2" aria-label="getFitaa home">
-      {/* Swap this SVG for <Image src="/logo.svg" ... /> once you have the real asset */}
-      {/* <svg
-        width="36"
-        height="36"
-        viewBox="0 0 36 36"
-        fill="none"
-        aria-hidden="true"
-        className="shrink-0"
-      >
-        <path
-          d="M4 17 18 5l14 12v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V17Z"
-          fill="#0E7C3A"
-        />
-        <path
-          d="m11 21 4 4 10-9"
-          stroke="#fff"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg> */}
       <Image 
         src="/get-fitaa-logo-icon.png" 
         alt="getFitaa"
