@@ -32,6 +32,7 @@ export default function Page() {
     <main className="">
       <PageShell>
         {/* <Hero /> */}
+        <Navbar />
         <SubHero />
         <ServiceAreas />
         <Services />

@@ -51,7 +51,7 @@
 
  
    import type { Metadata } from "next";
-   import Navbar from "@/components/Navbar";
+  //  import Navbar from "@/components/Navbar";
    import PageShell from "@/components/PageShell";
    import "./globals.css";
  
@@ -62,7 +62,7 @@
        <html lang="en">
          <body className="bg-white antialiased">
            <PageShell>
-             <Navbar />
+             {/* <Navbar /> */}
              <main>{children}</main>
            </PageShell>
          </body>

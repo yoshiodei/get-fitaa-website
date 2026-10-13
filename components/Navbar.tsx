@@ -51,7 +51,7 @@ export default function Navbar() {
   const isActive = (href: string) => href === pathname;
 
   return (
-    <header className="w-full bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <header className="sticky top-0 z-50 w-full border-b border-neutral-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <nav
         aria-label="Main"
         className="flex h-16 items-center justify-between px-4 sm:px-6 lg:h-[72px] lg:px-10"
