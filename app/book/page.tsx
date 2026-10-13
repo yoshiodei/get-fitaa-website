@@ -4,8 +4,8 @@ import { Suspense } from "react";
 import BookingPage from "@/components/book/BookingPage";
 
 export const metadata: Metadata = {
-  title: "Book a Clean | CleanGo",
-  description: "Choose your service, tell us about your space and book a trusted CleanGo cleaner in minutes.",
+  title: "Book a Clean | getFitaa",
+  description: "Choose your service, tell us about your space and book a trusted getFitaa cleaner in minutes.",
 };
 
 export default function BookPage() {

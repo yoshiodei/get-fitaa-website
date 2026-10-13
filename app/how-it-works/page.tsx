@@ -148,7 +148,7 @@ export default function HowItWorksPage() {
               href="/book"
               className="inline-flex w-full items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-bold text-[#0E7C3A] transition-colors hover:bg-[#D9F7D5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0E7C3A] sm:w-auto"
             >
-              Book a Clean
+              <span className="text-[#0E7C3A]">Book a Clean</span>
             </Link>
             <Link
               href="/#pricing"
